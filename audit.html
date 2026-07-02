@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Presence &amp; Growth Audit &middot; Betsy Bolinger, Realtor</title>
+<meta name="description" content="Web presence and growth audit for Betsy Bolinger, Central Texas Realtor. Prepared by AG1 Consulting.">
+<meta name="theme-color" content="#0a1524">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --navy:#0f1e33;
+  --navy-deep:#0a1524;
+  --navy-elev:#16283f;
+  --brass:#c8a24c;
+  --brass-bright:#e2bf6d;
+  --brass-deep:#a5842f;
+  --cream:#f5efe2;
+  --sand:#d8cbb0;
+  --sky:#7fa6c4;
+  --text:#f5efe2;
+  --text-muted:#a9b8ca;
+  --text-dim:#6d7f95;
+  --border:rgba(200,162,76,0.18);
+  --border-bright:rgba(226,191,109,0.44);
+  --brass-soft:rgba(200,162,76,0.08);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,sans-serif;background:var(--navy-deep);color:var(--text);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+iconify-icon{display:inline-block;vertical-align:-0.125em}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 70% 50% at 22% 0%,rgba(200,162,76,0.07),transparent 55%),radial-gradient(ellipse 60% 50% at 85% 100%,rgba(127,166,196,0.05),transparent 55%);pointer-events:none;z-index:0}
+
+/* ===== DEMO RIBBON ===== */
+.demo-ribbon{background:var(--brass-soft);border-bottom:1px solid var(--border-bright);text-align:center;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--brass-bright);padding:8px 16px;position:relative;z-index:120}
+
+/* ===== TOP BAR ===== */
+.topbar{position:sticky;top:0;background:rgba(10,21,36,0.86);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,0.05);z-index:100}
+.topbar-inner{max-width:1080px;margin:0 auto;padding:12px 28px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.topbar-logo{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:21px;letter-spacing:0.02em;color:var(--cream);display:flex;align-items:baseline;gap:8px}
+.topbar-logo .em{color:var(--brass-bright)}
+.topbar-logo .sub{font-size:9px;color:var(--brass);letter-spacing:0.28em;font-weight:600;font-family:'Inter',sans-serif;text-transform:uppercase}
+.topbar-links{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.topbar-links a{display:inline-flex;align-items:center;gap:8px;font-size:10.5px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-muted);padding:9px 16px;border:1px solid var(--border);border-radius:2px;transition:all 0.25s}
+.topbar-links a:hover{color:var(--brass-bright);border-color:var(--border-bright);background:var(--brass-soft)}
+.topbar-links a.primary{background:var(--brass);color:var(--navy-deep);border-color:var(--brass)}
+.topbar-links a.primary:hover{background:var(--brass-bright);color:var(--navy-deep)}
+.topbar-links iconify-icon{font-size:15px}
+
+/* ===== DOC WRAP ===== */
+.doc{max-width:840px;margin:0 auto;padding:0 28px 100px;position:relative;z-index:1}
+
+/* ===== COVER ===== */
+.cover{padding:96px 0 64px;text-align:center;border-bottom:1px solid var(--border);margin-bottom:20px}
+.cover-eyebrow{display:inline-flex;align-items:center;gap:12px;padding:9px 18px;border:1px solid var(--border-bright);border-radius:100px;background:var(--brass-soft);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--brass-bright);margin-bottom:34px;font-weight:600}
+.cover-eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--brass-bright);box-shadow:0 0 8px var(--brass-bright)}
+.cover h1{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(42px,7vw,74px);line-height:1.02;letter-spacing:0;color:var(--cream);font-style:italic;margin-bottom:18px}
+.cover h1 strong{font-style:normal;font-weight:600}
+.cover h1 em{color:var(--brass-bright);font-style:italic;font-weight:600}
+.cover-divider{width:110px;height:2px;background:var(--brass);margin:24px auto 30px;opacity:0.85}
+.cover-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(22px,3vw,30px);color:var(--sand);margin-bottom:34px}
+.cover-meta{display:flex;justify-content:center;gap:36px 48px;flex-wrap:wrap;margin-top:8px}
+.cover-meta div{text-align:center}
+.cover-meta dt{font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-dim);margin-bottom:7px}
+.cover-meta dd{font-size:14px;color:var(--cream);font-weight:500}
+
+/* ===== BROKERAGE NOTE ===== */
+.callout{border:1px solid var(--border-bright);border-left:3px solid var(--brass);border-radius:6px;background:linear-gradient(150deg,rgba(22,40,63,0.6),rgba(10,21,36,0.35));padding:24px 28px;margin:34px 0}
+.callout-head{display:flex;align-items:center;gap:12px;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--brass-bright);font-weight:700;margin-bottom:12px}
+.callout-head iconify-icon{font-size:20px;color:var(--brass-bright)}
+.callout p{font-size:15px;color:var(--text-muted);line-height:1.75}
+.callout p strong{color:var(--cream);font-weight:600}
+
+/* ===== SECTION STRUCTURE ===== */
+.sec{padding:52px 0;border-bottom:1px solid var(--border)}
+.sec:last-of-type{border-bottom:0}
+.sec-eyebrow{font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:var(--brass);margin-bottom:16px;display:flex;align-items:center;gap:14px;font-weight:600}
+.sec-eyebrow::before{content:'';width:28px;height:1px;background:var(--brass)}
+h2.sec-title{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(30px,4.4vw,50px);line-height:1.06;color:var(--cream);font-style:italic;margin-bottom:22px}
+h2.sec-title strong{font-style:normal;font-weight:600}
+h2.sec-title em{color:var(--brass-bright);font-style:italic}
+h3{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(23px,2.8vw,30px);color:var(--cream);line-height:1.15;margin:38px 0 16px}
+h3 em{color:var(--brass-bright);font-style:italic}
+h4{font-family:'Inter',sans-serif;font-weight:600;font-size:14px;letter-spacing:0.06em;color:var(--brass-bright);margin:28px 0 12px;text-transform:none}
+.doc p{font-size:16px;color:var(--text-muted);line-height:1.8;margin-bottom:18px;font-weight:300}
+.doc p strong{color:var(--cream);font-weight:600}
+.doc p em{color:var(--sand);font-style:italic}
+.lead{font-size:18px;color:var(--sand);line-height:1.75}
+.standalone{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(21px,2.6vw,27px);color:var(--brass-bright);line-height:1.4;margin:30px 0;padding-left:22px;border-left:3px solid var(--brass)}
+
+/* ===== LISTS ===== */
+.doc ul,.doc ol{margin:0 0 22px 4px;padding-left:0;list-style:none}
+.doc ul li{position:relative;padding:8px 0 8px 30px;font-size:15.5px;color:var(--text-muted);line-height:1.72;font-weight:300}
+.doc ul li::before{content:'';position:absolute;left:6px;top:16px;width:6px;height:6px;border-radius:50%;background:var(--brass);box-shadow:0 0 0 3px var(--brass-soft)}
+.doc ol{counter-reset:li}
+.doc ol li{position:relative;counter-increment:li;padding:9px 0 9px 42px;font-size:15.5px;color:var(--text-muted);line-height:1.72;font-weight:300}
+.doc ol li::before{content:counter(li);position:absolute;left:0;top:9px;width:26px;height:26px;border-radius:50%;background:var(--brass-soft);border:1px solid var(--border-bright);color:var(--brass-bright);font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:15px;display:flex;align-items:center;justify-content:center}
+.doc li strong{color:var(--cream);font-weight:600}
+.doc li em{color:var(--sand);font-style:italic}
+
+/* ===== TABLES ===== */
+.tbl-wrap{overflow-x:auto;margin:24px 0;border:1px solid var(--border);border-radius:6px}
+table{width:100%;border-collapse:collapse;min-width:520px}
+thead th{background:rgba(22,40,63,0.7);font-family:'Inter',sans-serif;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--brass-bright);font-weight:600;text-align:left;padding:15px 18px;border-bottom:1px solid var(--border-bright)}
+tbody td{padding:14px 18px;font-size:14.5px;color:var(--text-muted);line-height:1.6;border-bottom:1px solid var(--border);font-weight:300;vertical-align:top}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:nth-child(even){background:rgba(22,40,63,0.28)}
+tbody td:first-child{color:var(--cream);font-weight:500}
+tbody td strong{color:var(--brass-bright);font-weight:600}
+.src-note{font-size:12.5px;color:var(--text-dim);font-style:italic;line-height:1.7;margin:14px 0 6px}
+
+/* ===== SCORECARD BADGE ===== */
+.score-band{display:flex;align-items:center;gap:26px;flex-wrap:wrap;border:1px solid var(--border-bright);border-radius:8px;background:linear-gradient(150deg,rgba(22,40,63,0.7),rgba(10,21,36,0.4));padding:26px 30px;margin:26px 0}
+.score-badge{flex-shrink:0;width:96px;height:96px;border-radius:50%;border:2px solid var(--brass);display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--brass-soft)}
+.score-badge .num{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:38px;color:var(--brass-bright);font-weight:600;line-height:1}
+.score-badge .of{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-dim);margin-top:3px}
+.score-text{flex:1;min-width:220px}
+.score-text h4{margin:0 0 6px;color:var(--brass-bright);font-size:12px;letter-spacing:0.14em;text-transform:uppercase}
+.score-text p{margin:0;font-size:15px;color:var(--text-muted);line-height:1.65}
+
+/* ===== PHASE CARDS ===== */
+.phase{border:1px solid var(--border);border-radius:8px;background:linear-gradient(160deg,var(--navy-elev),var(--navy-deep));padding:28px 30px;margin:18px 0}
+.phase-head{display:flex;align-items:center;gap:16px;margin-bottom:16px}
+.phase-ic{width:46px;height:46px;flex-shrink:0;border-radius:10px;background:var(--brass-soft);border:1px solid var(--border-bright);display:flex;align-items:center;justify-content:center}
+.phase-ic iconify-icon{font-size:24px;color:var(--brass-bright)}
+.phase-head h3{margin:0;font-size:24px}
+.phase-head .wk{display:block;font-family:'Inter',sans-serif;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--brass);font-weight:600;margin-top:4px}
+.phase ul{margin-bottom:0}
+
+/* ===== TIER GRID ===== */
+.tiers{display:grid;grid-template-columns:1fr;gap:16px;margin:24px 0}
+.tier{border:1px solid var(--border);border-radius:8px;padding:26px 28px;background:linear-gradient(160deg,var(--navy-elev),var(--navy-deep))}
+.tier.rec{border-color:var(--border-bright);box-shadow:0 0 0 1px var(--brass-soft)}
+.tier-name{display:flex;align-items:center;gap:12px;font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;color:var(--cream);margin-bottom:10px}
+.tier-name .tag{font-family:'Inter',sans-serif;font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:var(--navy-deep);background:var(--brass);padding:4px 10px;border-radius:100px;font-weight:700}
+.tier p{margin:0;font-size:15px}
+
+/* ===== FUNNEL PATHS ===== */
+.paths{display:grid;gap:14px;margin:22px 0}
+.path{display:flex;gap:16px;align-items:flex-start;border:1px solid var(--border);border-radius:7px;padding:20px 22px;background:rgba(22,40,63,0.35)}
+.path-ic{width:42px;height:42px;flex-shrink:0;border-radius:9px;background:var(--brass-soft);border:1px solid var(--border-bright);display:flex;align-items:center;justify-content:center}
+.path-ic iconify-icon{font-size:22px;color:var(--brass-bright)}
+.path div p{margin:0;font-size:15px}
+.path div .path-t{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;color:var(--cream);font-weight:600;margin-bottom:4px}
+
+/* ===== NEXT STEPS CTA ===== */
+.next-cta{border:1px solid var(--border-bright);border-radius:8px;background:linear-gradient(150deg,rgba(22,40,63,0.75),rgba(10,21,36,0.45));padding:34px;text-align:center;margin-top:34px}
+.next-cta h3{margin:0 0 10px}
+.next-cta p{margin:0 auto 22px;max-width:48ch}
+.next-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:2px;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;transition:all 0.25s;font-family:inherit}
+.btn-primary{background:var(--brass);color:var(--navy-deep)}
+.btn-primary:hover{background:var(--brass-bright);transform:translateY(-1px)}
+.btn-ghost{border:1px solid var(--border-bright);color:var(--cream)}
+.btn-ghost:hover{background:var(--brass-soft);border-color:var(--brass-bright)}
+.btn iconify-icon{font-size:17px}
+
+/* ===== TOC ===== */
+.toc{border:1px solid var(--border);border-radius:8px;background:rgba(22,40,63,0.32);padding:26px 30px;margin:8px 0 12px;columns:2;column-gap:36px}
+@media(max-width:640px){.toc{columns:1}}
+.toc a{display:block;font-size:14px;color:var(--text-muted);padding:7px 0;border-bottom:1px solid rgba(200,162,76,0.08);transition:color 0.2s;break-inside:avoid}
+.toc a:hover{color:var(--brass-bright)}
+.toc a .n{color:var(--brass);font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;margin-right:10px}
+
+/* ===== FOOTER ===== */
+.doc-footer{text-align:center;padding:48px 0 0;color:var(--text-dim);font-size:13px;font-style:italic;line-height:1.9}
+.doc-footer strong{color:var(--sand);font-style:normal;font-weight:500}
+
+@media(max-width:600px){
+  .cover{padding:64px 0 48px}
+  .sec{padding:40px 0}
+  .score-band{padding:22px}
+}
+</style>
+</head>
+<body>
+
+<div class="demo-ribbon">Concept audit prepared for Betsy Bolinger &middot; confidential &middot; not an official site</div>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="#top" class="topbar-logo"><span class="em">Betsy</span> Bolinger<span class="sub">Growth Audit</span></a>
+    <div class="topbar-links">
+      <a href="index.html"><iconify-icon icon="mdi:web"></iconify-icon>View demo site</a>
+      <a href="https://andrei170.github.io/ag1/" class="primary" target="_blank" rel="noopener"><iconify-icon icon="mdi:compass-outline"></iconify-icon>AG1 hub</a>
+    </div>
+  </div>
+</div>
+
+<div class="doc" id="top">
+
+  <!-- ===== COVER ===== -->
+  <header class="cover">
+    <div class="cover-eyebrow"><span class="dot"></span>Confidential &middot; Concept redesign</div>
+    <h1><strong>Web Presence</strong> &amp; <em>Growth Audit</em></h1>
+    <div class="cover-divider"></div>
+    <p class="cover-sub">Betsy Bolinger, Realtor &middot; Austin &amp; greater Central Texas</p>
+    <dl class="cover-meta">
+      <div><dt>Prepared by</dt><dd>AG1 Consulting &middot; Andrei Givero</dd></div>
+      <div><dt>Date</dt><dd>July 2, 2026</dd></div>
+      <div><dt>Status</dt><dd>Concept redesign, not an official site</dd></div>
+    </dl>
+  </header>
+
+  <!-- ===== BROKERAGE NOTE ===== -->
+  <div class="callout">
+    <div class="callout-head"><iconify-icon icon="mdi:information-outline"></iconify-icon>Brokerage note (read first)</div>
+    <p>Betsy's brokerage affiliation is unconfirmed as of this draft. Nothing in this proposal or the demo site prints a brokerage name. <strong>Everything here is brokerage-neutral by design</strong> and stays that way until Betsy confirms how she wants her affiliation displayed.</p>
+  </div>
+
+  <!-- ===== EXECUTIVE SUMMARY ===== -->
+  <section class="sec" id="summary">
+    <div class="sec-eyebrow">Executive Summary</div>
+    <h2 class="sec-title">One of the strongest agents in Central Texas &mdash; and <em>one of the hardest to find online.</em></h2>
+    <p class="lead">Betsy Bolinger is, on paper, one of the strongest real estate agents you will meet in Central Texas. Twenty years in the business since 2005. A genuine, ownable specialty in VA and military financing, new construction, first-time buyers, and relocation. Full bilingual service, English and Spanish, in a market that rewards it. And a spotless "100% recommend" record across 17 client reviews, per her Facebook page.</p>
+    <p class="standalone">None of it lives anywhere she owns.</p>
+    <p><code style="font-family:inherit;color:var(--sand)">betsyismyrealtor.com</code> does not resolve - the domain is unregistered. Her entire digital footprint is a Facebook page and an Instagram handle, both on platforms she does not control and neither of which ranks when a buyer types her name into Google. A two-decade veteran who is already busy on referrals is, to every buyer who researches before they call, effectively invisible.</p>
+    <p>That gap matters more now than it ever has. Per the National Association of Realtors' 2024 buyer study, <strong>43% of buyers now start the home search online and 100% of buyers use the internet at some point</strong>, yet <strong>88% still ultimately purchase through an agent.</strong> Buyers begin online and end with a Realtor. Betsy shows up powerfully at the "end" (the referral, the reputation, the record) and is missing entirely from the "beginning" (the search, the first impression, the capture). Every buyer her reputation sends to Google today lands on a competitor's website or a directory profile that is not hers.</p>
+    <p>This is not a "you are failing" audit. It is a "you did the hard part and skipped the one asset that makes it compound" audit. Betsy already has the trust most agents spend a career chasing. What she is missing is the owned home base that turns twenty years of word-of-mouth into a findable, self-working, lead-capturing engine - and a defensible position in exactly the two lanes she is best at: <strong>VA / military</strong> and <strong>new construction</strong>, both of which are unusually valuable in the Central Texas corridor.</p>
+    <p><em>The fixes are surgical, not architectural, and they compound over 90 days.</em></p>
+  </section>
+
+  <!-- ===== TOC ===== -->
+  <section class="sec" id="contents">
+    <div class="sec-eyebrow">Contents</div>
+    <nav class="toc">
+      <a href="#opportunity"><span class="n">1</span>The Opportunity</a>
+      <a href="#audit"><span class="n">2</span>Current-State Audit</a>
+      <a href="#landscape"><span class="n">3</span>Competitor &amp; Discoverability Landscape</a>
+      <a href="#plan"><span class="n">4</span>The 90-Day Plan</a>
+      <a href="#spec"><span class="n">5</span>Website Specification</a>
+      <a href="#funnel"><span class="n">6</span>The Lead-Gen Funnel</a>
+      <a href="#kpis"><span class="n">7</span>KPIs &amp; Reporting</a>
+      <a href="#risk"><span class="n">8</span>Risk Reversal</a>
+      <a href="#investment"><span class="n">9</span>Investment Framing</a>
+      <a href="#whynow"><span class="n">10</span>Why Now</a>
+      <a href="#next"><span class="n">11</span>Next Steps</a>
+    </nav>
+  </section>
+
+  <!-- ===== 1. OPPORTUNITY ===== -->
+  <section class="sec" id="opportunity">
+    <div class="sec-eyebrow">01 &mdash; The Opportunity</div>
+    <h2 class="sec-title">The Central Texas market Betsy <em>already serves.</em></h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Signal</th><th>Figure</th></tr></thead>
+        <tbody>
+          <tr><td>Austin-Round Rock-San Marcos new residential units authorized (2024)</td><td>~32,294 - <strong>#6 metro in the U.S.</strong> for new-home building</td></tr>
+          <tr><td>Austin metro housing stock added 2015-2024</td><td>~120,000 units (~30% growth, 3x the national rate)</td></tr>
+          <tr><td>New construction as share of active Austin listings (May 2025)</td><td>~38% of active inventory</td></tr>
+          <tr><td>Austin new-construction median price</td><td>~$411K</td></tr>
+          <tr><td>New-build vs existing-home price gap in Austin</td><td>New builds ~$72K <strong>cheaper</strong> than existing homes on median</td></tr>
+          <tr><td>Texas rank for VA home loans</td><td><strong>#1 in the nation</strong> (largest veteran population)</td></tr>
+          <tr><td>Texas VA loans originated (2023)</td><td>43,000+ loans, <strong>&gt;10% of all U.S. VA loans</strong></td></tr>
+          <tr><td>U.S. VA loans guaranteed (2024)</td><td>416,000+ loans / $155B+ in volume</td></tr>
+          <tr><td>Fort Cavazos / Killeen corridor closings that start before the buyer arrives</td><td>~60% - a remote-buyer, PCS-timeline market</td></tr>
+          <tr><td>2026 conforming loan limit, Bell County (Fort Cavazos)</td><td>$806,500 - virtually every purchase fits $0-down VA territory</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="src-note">Figures: CultureMap Austin / Pew Charitable Trusts (Austin construction &amp; pricing); VA Benefits, MilitaryVALoan, VA Loan Network (VA volume &amp; corridor); NAR 2024 Profile of Home Buyers and Sellers (buyer behavior).</p>
+
+    <h3>Why this is Betsy's opportunity <em>specifically</em></h3>
+    <p>Betsy's two headline specialties map directly onto the two strongest signals in this market:</p>
+    <ol>
+      <li><strong>VA &amp; military.</strong> Texas leads the entire country in VA-loan volume, and the Central Texas corridor around Fort Cavazos is one of the densest VA markets anywhere - a market where roughly 60% of buyers are closing before they even arrive. That is a <strong>remote, high-trust, expertise-driven</strong> buyer who chooses an agent on credibility and specialization. A buyer PCS-ing in from another base is going to Google "VA realtor Central Texas" or "military relocation Killeen agent" months before they land. Right now Betsy does not appear in that search. She should own it.</li>
+      <li><strong>New construction.</strong> Austin is the #6 new-construction metro in the country, new builds are ~38% of active listings, and they are actually <em>cheaper</em> than resale on median - which makes to-be-built homes a first stop for budget-conscious buyers, including military families. New construction is a lane where buyer's agents add the most value (the builder's rep works for the builder) and where Betsy already has hundreds of closings. It is also one of the least-served search categories by individual agents, because most agents avoid it.</li>
+    </ol>
+
+    <h3>What the gap is worth <em>(conservative, illustrative)</em></h3>
+    <p>These are directional estimates to frame scale, not promises:</p>
+    <ul>
+      <li>A veteran agent working primarily on referral typically leaves the <strong>online-originated</strong> buyer (the 43% who start on the internet) almost entirely on the table today.</li>
+      <li>Even a modest owned-asset capture rate - a handful of qualified VA / new-construction leads per month from search and from the reputation traffic that currently bounces - compounds fast at Central Texas ticket sizes.</li>
+      <li>At an ~$411K new-construction median (and higher on resale), a <strong>single additional closing per quarter</strong> attributable to the website more than pays for the entire build-and-marketing engine for the year, before lifetime referral value.</li>
+    </ul>
+    <p>The point is not the exact number. The point is that Betsy's reputation is <em>already generating the demand</em>; there is simply no owned asset catching it.</p>
+    <p class="src-note"><strong>Sources:</strong> CultureMap Austin (new-home construction ranking); Pew Charitable Trusts (Austin housing supply &amp; new-build pricing); U.S. Dept. of Veterans Affairs / MilitaryVALoan (VA loan volume by state); VA Loan Network (Killeen / Fort Cavazos corridor); NAR 2024 Profile of Home Buyers and Sellers (buyer online-search behavior).</p>
+  </section>
+
+  <!-- ===== 2. CURRENT-STATE AUDIT ===== -->
+  <section class="sec" id="audit">
+    <div class="sec-eyebrow">02 &mdash; Current-State Audit</div>
+    <h2 class="sec-title">The one-line diagnosis.</h2>
+    <p class="standalone">A twenty-year veteran with a perfect review record and zero owned web presence.</p>
+    <p>Every strength she has is real; none of it is findable, capturable, or working while she sleeps.</p>
+
+    <div class="score-band">
+      <div class="score-badge"><span class="num">C&minus;</span><span class="of">Audit score</span></div>
+      <div class="score-text">
+        <h4>Web-presence maturity</h4>
+        <p>Elite reputation, near-zero owned infrastructure. The score is low because the foundation is missing, not because the agent is - which is exactly why it moves fast.</p>
+      </div>
+    </div>
+
+    <h3>Vulnerability scorecard</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Element</th><th>Today</th><th>Impact</th></tr></thead>
+        <tbody>
+          <tr><td>Owned website</td><td><strong>None</strong> - betsyismyrealtor.com unregistered</td><td>Invisible to the 43% of buyers who start online; owns no search real estate</td></tr>
+          <tr><td>Google presence for her own name</td><td>Weak / competitor-dominated</td><td>Other "Betsy" agents outrank her for her name</td></tr>
+          <tr><td>Review record</td><td>Real ("100% / 17 reviews") but <strong>trapped on Facebook</strong></td><td>Does zero SEO work, invisible on Google, disappears in a Google search</td></tr>
+          <tr><td>Lead capture</td><td><strong>None</strong> - no form, no guide, no email capture</td><td>Every non-ready visitor leaves with nothing and is never followed up</td></tr>
+          <tr><td>Lead magnet / nurture</td><td><strong>None</strong></td><td>No reason for an early-stage buyer to raise their hand</td></tr>
+          <tr><td>Directory profiles (Zillow / realtor.com / homes.com)</td><td>Not surfaced under her name</td><td>Absent from the exact platforms high-intent buyers browse</td></tr>
+          <tr><td>Google Business Profile</td><td>Not found</td><td>No map presence, no review destination, no local-pack eligibility</td></tr>
+          <tr><td>Email address</td><td><strong>Unbranded Gmail</strong></td><td>Small but real credibility leak for a 20-year professional</td></tr>
+          <tr><td>NAP consistency (Name / Address / Phone)</td><td>Ambiguous</td><td>Austin-market branding + (210) area code + no confirmed office = nothing consistent to anchor to</td></tr>
+          <tr><td>Specialty pages (VA / new construction)</td><td><strong>None</strong></td><td>The two most valuable, most ownable search categories are unclaimed</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>The six vulnerabilities <em>in plain language</em></h3>
+    <p><strong>1. No website at all.</strong> There is no owned web asset. Everything sits on rented platforms she cannot rank in search and does not control. For a two-decade veteran, this is not a small gap - it is the single thing standing between "busy from word of mouth" and "the obvious first call in Central Texas."</p>
+    <p><strong>2. Twenty years of proof is trapped on Facebook.</strong> The "100% recommend, 17 reviews" record is real and rare. It lives on one Facebook page where it feeds no Google presence and vanishes the moment a buyer searches her name on Google instead of inside Facebook. Proof that cannot be found is proof that does not convert.</p>
+    <p><strong>3. No lead capture, no nurture.</strong> No site means no valuation tool, no home-search, no lead magnet, no email capture. Every online visitor who is not ready to call <em>today</em> leaves with nothing and is never contacted again. For a referral-based veteran, this is pure leakage of the traffic her reputation already generates.</p>
+    <p><strong>4. Directory invisibility.</strong> No Zillow, realtor.com, or homes.com profile surfaced under her name. The review engines and listing platforms buyers trust are empty for her while she sits on a perfect record somewhere they will never look. Meanwhile, agents named "Betsy" who are <em>worse</em> on paper outrank her for her own name.</p>
+    <p><strong>5. Unbranded Gmail.</strong> A 20-year professional using a generic Gmail address instead of one on her own domain is a quiet credibility signal in the wrong direction. The domain is available. This is a same-day fix the moment the site exists.</p>
+    <p><strong>6. NAP / geography ambiguity.</strong> Austin-market branding with a (210) San Antonio area code, no confirmed office address, and no Google Business Profile means neither buyers nor search engines have a consistent name-area-phone to anchor to. Consistency here is a direct ranking and trust input.</p>
+  </section>
+
+  <!-- ===== 3. LANDSCAPE ===== -->
+  <section class="sec" id="landscape">
+    <div class="sec-eyebrow">03 &mdash; Competitor &amp; Discoverability Landscape</div>
+    <h2 class="sec-title">The problem is not competition. <em>It is absence.</em></h2>
+    <p>Central Texas is one of the most competitive agent markets in the country - Austin alone has thousands of licensed Realtors and the big portals (Zillow, realtor.com, Redfin) plus brokerage sites dominate page one for nearly every generic query. Betsy is not going to out-muscle Zillow for "homes for sale Austin," and she does not need to. The winnable, high-value ground is narrower and far more defensible:</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Query type</th><th>Who wins today</th><th>Can Betsy win it?</th></tr></thead>
+        <tbody>
+          <tr><td>"Betsy Bolinger realtor" (her own name)</td><td>Other "Betsy" agents + social profiles</td><td><strong>Yes - and must.</strong> An owned site + GBP + directory profiles claim her name back</td></tr>
+          <tr><td>"VA realtor Central Texas" / "military relocation agent Killeen"</td><td>Lender content + a few specialist agents</td><td><strong>Yes.</strong> This is her lane; almost no individual agent owns it well</td></tr>
+          <tr><td>"new construction buyer's agent Austin"</td><td>Builder sites + portals</td><td><strong>Yes, partially.</strong> A specialty page + guide captures the buyer's-agent-for-new-builds intent</td></tr>
+          <tr><td>"first time home buyer help Austin espa&ntilde;ol"</td><td>Sparse, mostly English</td><td><strong>Yes.</strong> Bilingual + first-time content is genuinely underserved</td></tr>
+          <tr><td>"homes for sale Austin" (generic)</td><td>Zillow / realtor.com / Redfin</td><td>No - do not fight this. Not the play.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>The name-search vulnerability</h3>
+    <p>The most urgent discoverability problem is the simplest: <strong>when someone hears "call Betsy" and Googles her, they should find her.</strong> Today they may find a different Betsy, a stale directory entry, or a Facebook page - any of which can cost a warm, referred lead at the exact moment of highest intent. An owned website, a claimed Google Business Profile, and a handful of directory profiles fix this within weeks and defend it permanently. This is the fastest, highest-ROI win in the entire plan.</p>
+  </section>
+
+  <!-- ===== 4. 90-DAY PLAN ===== -->
+  <section class="sec" id="plan">
+    <div class="sec-eyebrow">04 &mdash; The 90-Day Plan</div>
+    <h2 class="sec-title">Surgical fixes that <em>compound</em> over 90 days.</h2>
+
+    <div class="phase">
+      <div class="phase-head"><div class="phase-ic"><iconify-icon icon="mdi:hammer-wrench"></iconify-icon></div><div><h3>Phase 1: Build the owned asset<span class="wk">Weeks 1-2</span></h3></div></div>
+      <ul>
+        <li>Register betsyismyrealtor.com and deploy the website (this demo, finalized with Betsy's real headshot, real review quotes, and confirmed brokerage display).</li>
+        <li>Stand up branded email (betsy@betsyismyrealtor.com) and migrate off Gmail.</li>
+        <li>Wire Google Search Console + basic analytics.</li>
+        <li>Deploy schema: RealEstateAgent / Person (Betsy's credential stack), LocalBusiness, FAQPage, and Review markup so the 100% record is machine-readable.</li>
+      </ul>
+    </div>
+
+    <div class="phase">
+      <div class="phase-head"><div class="phase-ic"><iconify-icon icon="mdi:shield-account-outline"></iconify-icon></div><div><h3>Phase 2: Claim her name &amp; reviews<span class="wk">Weeks 2-5</span></h3></div></div>
+      <ul>
+        <li>Create / claim Google Business Profile (once office / service-area is confirmed) - the fastest path to owning "Betsy Bolinger realtor."</li>
+        <li>Build out Zillow, realtor.com, and homes.com agent profiles under her name.</li>
+        <li><strong>Migrate the reviews:</strong> systematic outreach to past clients (the 17 Facebook reviewers first) to re-post on Google, turning trapped proof into ranking proof. Target a steady cadence of new Google reviews.</li>
+      </ul>
+    </div>
+
+    <div class="phase">
+      <div class="phase-head"><div class="phase-ic"><iconify-icon icon="mdi:road-variant"></iconify-icon></div><div><h3>Phase 3: Own the two lanes<span class="wk">Weeks 3-8</span></h3></div></div>
+      <ul>
+        <li><strong>VA / military landing page:</strong> PCS timelines, $0-down entitlement, appraisal rules, remote-buyer process, bilingual. Built to capture the corridor's high-intent, out-of-state buyer.</li>
+        <li><strong>New-construction landing page:</strong> why you want your own agent at a builder, contract review, upgrade strategy, inspection timing.</li>
+        <li><strong>First-time / bilingual page:</strong> English + Spanish, down-payment-assistance and Texas veteran programs.</li>
+        <li>Publish the <strong>lead-magnet guide</strong> ("Central Texas VA &amp; Military Homebuyer's Guide") behind the email capture.</li>
+      </ul>
+    </div>
+
+    <div class="phase">
+      <div class="phase-head"><div class="phase-ic"><iconify-icon icon="mdi:sync"></iconify-icon></div><div><h3>Phase 4: Local SEO &amp; nurture flywheel<span class="wk">Weeks 6+</span></h3></div></div>
+      <ul>
+        <li>Local SEO: consistent NAP across all profiles, service-area content for the corridor cities she actually works.</li>
+        <li>Review-request automation post-closing (keep the "100%" compounding, now on Google).</li>
+        <li>Simple email nurture for captured leads (guide download to consultation).</li>
+        <li>Monthly performance snapshot.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== 5. WEBSITE SPEC ===== -->
+  <section class="sec" id="spec">
+    <div class="sec-eyebrow">05 &mdash; Website Specification</div>
+    <h2 class="sec-title">Five tiers, <em>one owned home base.</em></h2>
+    <h4>Tier 1 &mdash; Owned home base</h4>
+    <p>A fast, mobile-first, single-brand site that ranks for her name and specialty. Navy + brass, Cormorant Garamond, the "established / trusted veteran" feel. <em>(Built - this demo.)</em></p>
+    <h4>Tier 2 &mdash; Trust surfacing</h4>
+    <p>"Since 2005" and "100% recommended" as hero-level signals. Credential bar (Since 2005 / 100% Recommended / Bilingual / VA-fluent). Real headshot and real review quotes swapped in from Facebook on day one, with a plan to migrate those reviews to Google.</p>
+    <h4>Tier 3 &mdash; Specialty depth</h4>
+    <p>Dedicated, schema-marked pages for the two ownable lanes (VA / military, new construction) plus first-time and relocation - each written for the exact search intent, each bilingual where it matters.</p>
+    <h4>Tier 4 &mdash; Conversion architecture</h4>
+    <p>Lead-magnet guide + name/email capture, click-to-call and click-to-email throughout, a clear "How it works" process section, and an FAQ that answers the VA / new-construction / bilingual questions buyers actually ask (all on-page today).</p>
+    <h4>Tier 5 &mdash; Brand &amp; compliance</h4>
+    <p>Brokerage-neutral until confirmed. No invented stats, reviews, or facts. Any unverified item stays placeholder-flagged on the live build until Betsy confirms it.</p>
+  </section>
+
+  <!-- ===== 6. FUNNEL ===== -->
+  <section class="sec" id="funnel">
+    <div class="sec-eyebrow">06 &mdash; The Lead-Gen Funnel</div>
+    <h2 class="sec-title">Not a brochure &mdash; <em>a funnel</em> with a path for every visitor.</h2>
+    <div class="paths">
+      <div class="path"><div class="path-ic"><iconify-icon icon="mdi:phone-in-talk-outline"></iconify-icon></div><div><p class="path-t">Ready-now buyer</p><p>Click-to-call / email &rarr; consultation. (Top of every section.)</p></div></div>
+      <div class="path"><div class="path-ic"><iconify-icon icon="mdi:book-open-page-variant-outline"></iconify-icon></div><div><p class="path-t">Researching buyer (the 43%)</p><p>Reads the VA or new-construction lane &rarr; downloads the guide &rarr; enters email nurture &rarr; books a consult when ready.</p></div></div>
+      <div class="path"><div class="path-ic"><iconify-icon icon="mdi:account-arrow-right-outline"></iconify-icon></div><div><p class="path-t">Referred buyer ("call Betsy")</p><p>Googles her &rarr; <strong>now finds her own site</strong> (not a competitor) &rarr; the record and specialty confirm the referral &rarr; calls.</p></div></div>
+    </div>
+    <p>The <strong>"Central Texas VA &amp; Military Homebuyer's Guide"</strong> is the lead magnet: high-value, corridor-specific, and perfectly matched to her highest-intent, highest-trust buyer. A "New Construction Buyer's Checklist" is the natural second magnet for the Austin new-build audience. Both turn anonymous reputation traffic into named, followed-up leads.</p>
+  </section>
+
+  <!-- ===== 7. KPIs ===== -->
+  <section class="sec" id="kpis">
+    <div class="sec-eyebrow">07 &mdash; KPIs &amp; Reporting</div>
+    <h2 class="sec-title">What the asset is <em>doing</em>, in numbers.</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>KPI</th><th>Baseline</th><th>30-day</th><th>60-day</th><th>90-day</th></tr></thead>
+        <tbody>
+          <tr><td>Owned website live &amp; indexed</td><td>No</td><td><strong>Yes</strong></td><td>Yes</td><td>Yes</td></tr>
+          <tr><td>Ranks page 1 for "Betsy Bolinger realtor"</td><td>No</td><td>Improving</td><td><strong>Yes</strong></td><td>Yes / defended</td></tr>
+          <tr><td>Google Business Profile live</td><td>No</td><td>Claimed</td><td>Optimized</td><td>Reviewing</td></tr>
+          <tr><td>Google reviews (migrated from Facebook)</td><td>0 on Google</td><td>+5</td><td>+10</td><td>+15 and climbing</td></tr>
+          <tr><td>VA / new-construction landing pages live</td><td>0</td><td>1</td><td>2</td><td>2-3 + guide</td></tr>
+          <tr><td>Lead-magnet captures (email list)</td><td>0</td><td>First captures</td><td>Growing</td><td>Steady monthly</td></tr>
+          <tr><td>Consultation requests from website</td><td>0</td><td>First</td><td>+growing</td><td>Reliable monthly flow</td></tr>
+          <tr><td>Directory profiles (Zillow / realtor.com / homes.com)</td><td>None</td><td>1-2</td><td>Complete</td><td>Complete + reviewed</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Reporting: a simple monthly dashboard (rankings, captures, consults, reviews) so Betsy can see exactly what the asset is doing, without needing to be technical.</p>
+  </section>
+
+  <!-- ===== 8. RISK REVERSAL ===== -->
+  <section class="sec" id="risk">
+    <div class="sec-eyebrow">08 &mdash; Risk Reversal</div>
+    <h2 class="sec-title">Owning her own name is <em>the floor, not the ceiling.</em></h2>
+    <p><strong>Build tier:</strong> Fixed scope, fixed fee, guaranteed delivery. The website, branded email, and core profiles ship regardless.</p>
+    <p><strong>Growth tier, name-search gate:</strong> If Betsy is not ranking on page one for her own name ("Betsy Bolinger realtor") within 90 days of the site going live and the profiles being claimed, the following month of optimization work is at no additional cost. Owning her own name is the floor, not the ceiling - and it is the one outcome we are most confident committing to.</p>
+    <p>No long lock-in. The website is Betsy's owned asset from day one; if she ever walks away, she keeps the domain, the site, the email list, and the reviews. <em>The whole point is that she finally owns the thing her reputation feeds.</em></p>
+  </section>
+
+  <!-- ===== 9. INVESTMENT ===== -->
+  <section class="sec" id="investment">
+    <div class="sec-eyebrow">09 &mdash; Investment Framing</div>
+    <h2 class="sec-title">Start where it makes sense, <em>scale as it proves itself.</em></h2>
+    <div class="tiers">
+      <div class="tier">
+        <div class="tier-name">Foundation</div>
+        <p>Register the domain, deploy the site, branded email, Google Business Profile, Search Console, and one specialty (VA / military) landing page + guide. The "claim your name and stop the leak" tier.</p>
+      </div>
+      <div class="tier rec">
+        <div class="tier-name">Growth <span class="tag">Recommended</span></div>
+        <p>Foundation plus the full two-lane build (VA + new construction + first-time / bilingual), directory profiles, review migration campaign, lead-magnet funnel, local SEO, and the name-search performance gate.</p>
+      </div>
+      <div class="tier">
+        <div class="tier-name">Engine</div>
+        <p>Growth plus ongoing content, review automation, paid-search layer for the VA / new-construction lanes, and monthly reporting - the "compound it" tier for turning the owned asset into a durable lead machine.</p>
+      </div>
+    </div>
+    <p class="src-note">Specific pricing is set on a fit call once scope and brokerage display are confirmed. The framing above is about sequence and outcome, not a quote.</p>
+  </section>
+
+  <!-- ===== 10. WHY NOW ===== -->
+  <section class="sec" id="whynow">
+    <div class="sec-eyebrow">10 &mdash; Why Now</div>
+    <h2 class="sec-title">Every month without the asset is <em>warm traffic bouncing.</em></h2>
+    <ol>
+      <li><strong>The reputation is already generating demand you cannot see.</strong> Twenty years of "call Betsy" is sending people to Google <em>today</em> - and today they do not find her. Every month without the asset is warm, referred, high-intent traffic bouncing to a competitor.</li>
+      <li><strong>The two lanes are hot and open.</strong> Austin is the #6 new-construction metro in the country; Texas leads the nation in VA loans; the Fort Cavazos corridor is a remote-buyer market that chooses agents on specialization. These are exactly Betsy's specialties, and almost no individual agent owns the search for them.</li>
+      <li><strong>Owning her name gets harder, not easier, the longer it waits.</strong> Other "Betsy" agents and the portals are consolidating the name-search real estate now. Claiming it in 2026 is a weeks-long project; reclaiming it later, after a competitor has entrenched, is a much longer fight.</li>
+    </ol>
+  </section>
+
+  <!-- ===== 11. NEXT STEPS ===== -->
+  <section class="sec" id="next">
+    <div class="sec-eyebrow">11 &mdash; Next Steps</div>
+    <h2 class="sec-title">Three moves to <em>claim the ground.</em></h2>
+    <ol>
+      <li><strong>20-minute fit call</strong> - confirm brokerage display, service area / office, and which lane to lead with.</li>
+      <li><strong>Register the domain and finalize the demo</strong> - real headshot, real review quotes, confirmed details in.</li>
+      <li><strong>Ship Foundation, then scale</strong> - claim the name, migrate the reviews, build the lanes.</li>
+    </ol>
+    <div class="next-cta">
+      <h3>Ready when you are.</h3>
+      <p>See the concept site built for this plan, or reach out to start the fit call.</p>
+      <div class="next-row">
+        <a href="index.html" class="btn btn-primary"><iconify-icon icon="mdi:web"></iconify-icon>View the demo site</a>
+        <a href="mailto:info@andreicopy.net" class="btn btn-ghost"><iconify-icon icon="mdi:email-outline"></iconify-icon>info@andreicopy.net</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <div class="doc-footer">
+    <p>Confidential. Prepared for <strong>Betsy Bolinger</strong>, July 2026. Concept redesign - not an official site.<br>
+    <strong>AG1 Consulting</strong> &middot; Andrei Givero</p>
+  </div>
+
+</div>
+
+</body>
+</html>
